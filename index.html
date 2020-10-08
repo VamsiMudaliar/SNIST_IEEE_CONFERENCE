@@ -14,11 +14,24 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/ff7f016cab.js"></script>
+
+  <script type="text/javascript">
+    function fun(a){
+
+      items=document.querySelectorAll('.single.sad');
+      if(items.length)
+        items[0].className='single';
+      a.className='single sad';
+
+    }
+  </script>
+
+
   <title>Home Page</title>
 </head>
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__fadeIn" style="position: sticky;z-index: 999; ">
-  <a class="navbar-brand" href="#" style="font-size: 20px"><strong>ICICCSP 2020</strong></a>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__fadeIn" style="position: sticky;height: auto;">
+  <a class="navbar-brand" href="#" style="font-size: 25px"><strong>ICICCSP 2020</strong></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,27 +39,27 @@
   <div class="collapse navbar-collapse "id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><strong>Home </strong><span class="sr-only">(current)</span></a>
+        <a class="nav-link abc single sad" onclick="fun(this)" href="#"><strong>Home </strong></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#meetOurTeam"><strong>Meet Our Team</strong></a>
+      <li class="nav-item active ">
+        <a class="nav-link abc single" href="#meetOurTeam"><strong>Meet Our Team</strong></a>
       </li>
         <li class="nav-item active">
-        <a class="nav-link" href="#preConference"><strong>Pre Conference Tutorial</strong> <span class="sr-only">(current)</span></a>
+        <a class="nav-link abc single" href="#preConference"><strong>Pre Conference Tutorial</strong></a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link" href="#inform"><strong>Info </strong> <span class="sr-only">(current)</span></a>
+        <a class="nav-link abc single" href="#inform"><strong>Info </strong></a>
       </li>     
       <li class="nav-item active">
-        <a class="nav-link" href="#About"><strong>About Us</strong> <span class="sr-only">(current)</span></a>
+        <a class="nav-link abc single" href="#About"><strong>About Us</strong> </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#scope"><strong>Scope and Interest</strong> <span class="sr-only">(current)</span></a>
+        <a class="nav-link abc single" href="#scope"><strong>Scope and Interest</strong></a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="#Contact"><strong>Contact Us</strong></a>
+        <a class="nav-link abc single" href="#Contact"><strong>Contact Us</strong></a>
       </li>
       </ul>
     </div>
@@ -56,7 +69,7 @@
    <div class="row col-lg-6 text-center homeText">
     <h1>International Conference on
     Intelligent Controller, Computing and Smart Power</h1><br>
-    <h5 style="display: flex; justify-content: center">20th to 22th May 2021 at Sreenidhi Institute of Science and Technology, Gathkesar</h5>
+    <h5 style="display: flex; justify-content: center">20th to 22th May 2021 at Sreenidhi Institute of Science and Technology,Yamnampet, Gathkesar,Hyderabad</h5>
   </div>
 </div>
 <div class="container-fluid imageContent " style="margin-top:700px;">
@@ -67,9 +80,8 @@
      <img src="snist.jpg" class="img-thumbnail" height="300px" width="300px">
    </div>
 
-
-   <div class="col-lg-6  text-center">
-     <img src="Springer.png" class="img-thumbnail" height="300px" width="300px">
+   <div class="col-lg-6 my-3  text-center">
+     <img src="logo.png" class="img-thumbnail" height="200px" width="200px">
    </div>
 
 

@@ -8,12 +8,17 @@ html,body{
 }
 .homeImage{
 	position: absolute;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bigdata.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('solar.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
 	color: #f5f5f5;
+}
+.abc:hover,.sad{
+	background-color: #0082c8;
+	border-radius: 12px;
+	transition: 0.6s ease;
 }
 .homeText{
 	position: relative;
@@ -29,7 +34,7 @@ html,body{
 }
 .footerDetail{
 	width: 100% ;height:auto;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('bigdata.jpg') ;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('solar.jpg') ;
 	color:white;
 	background-position: center;
 }
