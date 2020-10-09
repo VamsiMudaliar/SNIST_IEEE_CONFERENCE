@@ -17,8 +17,10 @@ html,body{
 }
 .abc:hover,.sad{
 	background-color: #0082c8;
-	border-radius: 12px;
 	transition: 0.6s ease;
+}
+.nav-item{
+	padding: 3px; 
 }
 .homeText{
 	position: relative;

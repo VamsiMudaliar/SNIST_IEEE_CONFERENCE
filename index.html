@@ -14,20 +14,16 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/ff7f016cab.js"></script>
-
-  <script type="text/javascript">
-    function fun(a){
-
-      items=document.querySelectorAll('.single.sad');
-      if(items.length)
-        items[0].className='single';
-      a.className='single sad';
-
-    }
-  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script type="text/javascript">
+   $(document).on('click','ul li',function(){
+      $(this).addClass('sad').siblings().removeClass('sad');
+   });
 
 
-  <title>Home Page</title>
+ </script>
+ <title>Home Page</title>
 </head>
 <body>
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__fadeIn" style="position: sticky;height: auto;">
@@ -39,38 +35,38 @@
   <div class="collapse navbar-collapse "id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link abc single sad" onclick="fun(this)" href="#"><strong>Home </strong></a>
+        <a class="nav-link abc" href="#"><strong>Home </strong></a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link abc single" href="#meetOurTeam"><strong>Meet Our Team</strong></a>
+        <a class="nav-link abc"  href="#meetOurTeam"><strong>Committee Members</strong></a>
       </li>
-        <li class="nav-item active">
-        <a class="nav-link abc single" href="#preConference"><strong>Pre Conference Tutorial</strong></a>
+      <li class="nav-item active">
+        <a class="nav-link abc" href="#preConference"><strong>Pre Conference Tutorial</strong></a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link abc single" href="#inform"><strong>Info </strong></a>
+        <a class="nav-link abc" href="#inform"><strong>Info </strong></a>
       </li>     
       <li class="nav-item active">
-        <a class="nav-link abc single" href="#About"><strong>About Us</strong> </a>
+        <a class="nav-link abc" href="#About"><strong>About Us</strong> </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link abc single" href="#scope"><strong>Scope and Interest</strong></a>
+        <a class="nav-link abc" href="#scope"><strong>Scope and Interest</strong></a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link abc single" href="#Contact"><strong>Contact Us</strong></a>
+        <a class="nav-link abc" href="#Contact"><strong>Contact Us</strong></a>
       </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container-fluid homeImage animate__animated animate__fadeIn">
-
-   <div class="row col-lg-6 text-center homeText">
-    <h1>International Conference on
-    Intelligent Controller, Computing and Smart Power</h1><br>
-    <h5 style="display: flex; justify-content: center">20th to 22th May 2021 at Sreenidhi Institute of Science and Technology,Yamnampet, Gathkesar,Hyderabad</h5>
+    </ul>
   </div>
+</nav>
+<div class="container-fluid homeImage animate__animated animate__fadeIn">
+
+ <div class="row col-lg-6 text-center homeText">
+  <h1>International Conference on
+  Intelligent Controller, Computing and Smart Power</h1><br>
+  <h5 style="display: flex; justify-content: center">20th to 22th May 2021 at Sreenidhi Institute of Science and Technology,Yamnampet, Gathkesar,Hyderabad</h5>
+</div>
 </div>
 <div class="container-fluid imageContent " style="margin-top:700px;">
 
@@ -138,84 +134,84 @@ Gandhi International Airport.</p>
 
   <h2 class="text-primary"><strong>Pre-Conference Tutorial</strong></h1><br>
 
-  <div class="alert alert-success text-center" role="alert">
-    All registered Participants (including the Listeners) for the Conference will have access to the Pre-Conference Tutorials.
-  </div>
+    <div class="alert alert-success text-center" role="alert">
+      All registered Participants (including the Listeners) for the Conference will have access to the Pre-Conference Tutorials.
+    </div>
 
-  <div class="alert alert-info text-center" role="alert" style="text-align: justify;">
-    <p><strong>Date   :</strong> From 20th May 2021 to 22nd May 2021</p>
-    <p><strong>Venue  :</strong>SNIST,Hyderabad</p>
-    <p><strong>Registration Fees : </strong>INR 1000/-</p>
-    <button class="btn btn-lg btn-primary">Register now</button> 	
-  </div>
+    <div class="alert alert-info text-center" role="alert" style="text-align: justify;">
+      <p><strong>Date   :</strong> From 20th May 2021 to 22nd May 2021</p>
+      <p><strong>Venue  :</strong>SNIST,Hyderabad</p>
+      <p><strong>Registration Fees : </strong>INR 1000/-</p>
+      <button class="btn btn-lg btn-primary">Register now</button> 	
+    </div>
 
 
-  <div class="alert alert-danger " role="alert" style="text-align: center;">
-    <h4 class="text-center">Important Information</h4>
-    <p><strong>Submission deadline: </strong>28 th Feb 2021</p>
-    <p><strong>Notification of Acceptance:</strong>31 st March 2021</p>
-    <p><strong>Submission deadline for revised papers: </strong>15 th April
-    2021</p>
-    <p><strong>Registration deadline:</strong> 30 th April 2021</p>
-  </div>
+    <div class="alert alert-danger " role="alert" style="text-align: center;">
+      <h4 class="text-center">Important Information</h4>
+      <p><strong>Submission deadline: </strong>28 th Feb 2021</p>
+      <p><strong>Notification of Acceptance:</strong>31 st March 2021</p>
+      <p><strong>Submission deadline for revised papers: </strong>15 th April
+      2021</p>
+      <p><strong>Registration deadline:</strong> 30 th April 2021</p>
+    </div>
     <a href="#" id="inform"></a>
 
-</div><br>
+  </div><br>
 
 
 
-<div class="container py-4 px-4">
-  <h2 class="text-primary"><strong>Registration Information</strong></h2><br>
+  <div class="container py-4 px-4">
+    <h2 class="text-primary"><strong>Registration Information</strong></h2><br>
 
-  <div class="alert alert-success " role="alert" style="text-align: justify;">
-    Interested participants may register their names using the form at the bottom of the page. The
-    confirmation regarding participation will be sent through e-mail. To ensure publication of a
-    paper in the Proceedings, at least one author has to register by submitting a normal
-    registration fee within deadline as indicated below.
+    <div class="alert alert-success " role="alert" style="text-align: justify;">
+      Interested participants may register their names using the form at the bottom of the page. The
+      confirmation regarding participation will be sent through e-mail. To ensure publication of a
+      paper in the Proceedings, at least one author has to register by submitting a normal
+      registration fee within deadline as indicated below.
+    </div>
+
+    <div class="alert alert-info text-center" role="alert" style="text-align: justify;">
+
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Registration Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Foreign Delegates (Research Scholar/ Students)</th>
+            <td>USD 100</td>
+          </tr>
+          <tr>
+            <th scope="row">Foreign Delegates
+            (Academicians/ Scientist)</th>
+            <td>USD 125</td>
+          </tr>
+          <tr>
+            <th scope="row">Research Scholar/ Students</th>
+            <td>INR 3000</td>
+          </tr>
+          <tr>
+            <th scope="row">Academicians/ Scientist</th>
+            <td>INR 5000</td>
+          </tr>
+          <tr>
+            <th scope="row">Industry Experts</th>
+            <td>INR 6000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <a href="#" id="scope"></a>
+    </div>
   </div>
 
-  <div class="alert alert-info text-center" role="alert" style="text-align: justify;">
 
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th scope="col">Category</th>
-          <th scope="col">Registration Fees</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Foreign Delegates (Research Scholar/ Students)</th>
-          <td>USD 100</td>
-        </tr>
-        <tr>
-          <th scope="row">Foreign Delegates
-          (Academicians/ Scientist)</th>
-          <td>USD 125</td>
-        </tr>
-        <tr>
-          <th scope="row">Research Scholar/ Students</th>
-          <td>INR 3000</td>
-        </tr>
-        <tr>
-          <th scope="row">Academicians/ Scientist</th>
-          <td>INR 5000</td>
-        </tr>
-        <tr>
-          <th scope="row">Industry Experts</th>
-          <td>INR 6000</td>
-        </tr>
-      </tbody>
-    </table>
-
-<a href="#" id="scope"></a>
-  </div>
-</div>
-
-
-<div class="container py-4 px-4">
-	<h2 class="text-primary"><strong>Scopes and Interests</strong></h2><br>
-  <p style="text-align: justify; word-spacing: 8px; font-size: 20px">
+  <div class="container py-4 px-4">
+   <h2 class="text-primary"><strong>Scopes and Interests</strong></h2><br>
+   <p style="text-align: justify; word-spacing: 8px; font-size: 20px">
 
     <div class="row">
 
@@ -271,7 +267,7 @@ Gandhi International Airport.</p>
       <li>Web Intelligence and Computing</li>
       <li>Wireless Networks</li>
       <li>Cloud Computing</li>
-<a href="#" id="meetOurTeam"></a>
+      <a href="#" id="meetOurTeam"></a>
       <li>Nonlinear systems</li>
     </ul>
   </div>
@@ -280,7 +276,7 @@ Gandhi International Airport.</p>
 </div>
 </div><br>
 <div class="container table-responsive">
-  <h2 class="text-primary">Meet Our Team</h2><br>
+  <h2 class="text-primary">Committee Members</h2><br>
   <table class="table table-bordered table-hover table-striped">
     <thead>
       <tr>
@@ -298,198 +294,319 @@ Gandhi International Airport.</p>
       <tr>
         <th scope="row">2</th>
         <td><strong>PATRON (S)</strong></td>
-        <td>Dr. P. Narasimha Reddy, Executive Director, SNIST<br>
-        Sri. K. Abhijit Rao, Director, SNIST</td>
+        <td>Dr. P. Narasimha Reddy, Executive Director, SNIST,Hyderabad, Telangana<br>
+        Sri. K. Abhijit Rao, Director, SNIST,Hyderabad,Telangana</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td><strong>CO-PATRON</strong></td>
-        <td>Dr. T. Ch. Siva Reddy, Principal, SNIST</td>
+        <td>Prof(Dr).T. Ch. Siva Reddy, Principal, SNIST,Hyderabad,Telangana</td>
       </tr>
 
       <tr>
         <th scope="row">4</th>
         <td><strong>CONVENOR</strong></td>
-        <td>Dr. C. Bhargava, Head, EEE, SNIST</td>
+        <td>Prof(Dr ). C. Bhargava, Head, EEE,SNIST,Hyderabad,Telangana</td>
       </tr>
 
       <tr>
         <th scope="row">5</th>
         <td><strong>GENERAL CHAIR</strong></td>
-        <td>Dr.K.Summantha, Professor, Fellow IEEE</td>
+        <td>Prof. (Dr). K. Sumanth, Member, IEEE, SNIST, Hyderabad, Telangana</td>
       </tr>
 
       <tr>
         <th scope="row">6</th>
         <td><strong>PROGRAM CHAIR</strong></td>
-        <td>Prof.Gayadhar Panda, National Institute of Technology, Meghalya<br>
-        Prof. Srinivas Sethi, Indira Gandhi Institute of Technology, Saranga</td>
+        <td>Prof. (Dr). Gayadhar Panda, National Institute of Technology,
+          Meghalaya<br>
+        Prof. (Dr). Srinivas Sethi, Indira Gandhi Institute of Technology, Saranga</td>
       </tr>
 
       <tr>
         <th scope="row">7</th>
         <td><strong>PROGRAM CO-CHAIR</strong></td>
-        <td>Dr.P.RaviBabu, Professor EEE SNIST</td>
+        <td>Prof(Dr). P.RaviBabu, Professor EEE SNIST<br>
+        Prof(Dr). S. Ravichandran, Dept. EEE, SNIST, Hyderabad, Telangana</td>
       </tr>
 
       <tr>
         <th scope="row">8</th>
-        <td><strong>ORGANISING CHAIR</strong></td>
-        <td>Dr.Pratap Sekhar Puhan, Professor EEE SNIST</td>
+        <td><strong>ORGANISING SECRETARY</strong></td>
+        <td>Prof(Dr). Pratap Sekhar Puhan, Dept. EEE, SNIST, Hyderabad,Telangana</td>
       </tr>
 
       <tr>
         <th scope="row">9</th>
         <td><strong>PUBLICITY CHAIR</strong></td>
-        <td>Dr.S.Ravi Chandran,Faculty,Dr. Raghavendra Reddy Karasani,Dr.G.Ramesh Professor EEE SNIST,Dr.Kannan ,Dr.V.Ranjith babu,Dr.Krishna Dora,Dr.M.T.L Gayatri ,Dr.P.Sharath Kumar, Dr.Kalathiripi Hussain ,Dr.Komella Krishna Chaitanya</td>
+        <td>Prof. R. Reddy Karasani,Dept.EEE,SNIST, Hyderabad, Telangana<br/>
+          Prof. G.Ramesh, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. K.Kannan, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. Ranjith Babu, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. Krishna Dora, Dept.EEE,SNIST. Hyderabad, Telangana<br>
+          Prof. M.T.L. Gayatri, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. Sharath Kumar, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. Kalathiripi Hussain, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. K.K.C.Deekshit, Dept.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. Prasanta Sahoo,Dept.of CSE,SNIST, Hyderabad, Telangana<br>
+          Prof. Sridhar Bukya, Dept.of CSE,SNIST, Hyderabad, Telangana<br>
+          Prof. PVS Srinivas, Dept.of CSE,SNIST, Hyderabad, Telangana<br>
+          Prof. Ch.Niranjan Kumar, Dept.of CSE,SNIST, Hyderabad, Telangana<br>
+        Prof. T.Vijaya Saradhi, Dept.of CSE,SNIST, Hyderabad, Telangana</td>
       </tr>
       <tr>
         <th scope="row">10</th>
         <td><strong>ACCOMMODATION CHAIRS</strong></td>
-        <td>Mr.V.Krishna Murthy,
-          Mr.J.Pradeep,
-          Mr.K.Ravi,
-          Ms. K. Prasanya,
-        Mr. Potnuri Venkatesh,</td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td><strong>FINANCE CHAIR</strong></td>
-        <td>Mr. Ch.V. Seshagiri Rao, Professor EEE SNIST <br> Sri. K.V.V.P.Chari, Professor EEE SNIST </td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td><strong>COORDINATORS</strong></td>
-        <td>Mr.S.Ramu,
-          Mr.T. Abhiram,
-          Mr.T.Praveen Kumar,
-          Mr.J.Pradeep, 
-          Ms.K.Sree Lakshmi,
-          Mrs.L. Rama Devi,
-        Ms.G.Sravanthi</td>
-      </tr>
-      <tr>
-        <th scope="row">13</th>
-        <td><strong>ORGANIZING MEMBERS </strong></td>
-        <td>Mr. PVK Sandeep,
-          Mr.B.Pavan Kumar ,Mr. P. Satyanarayana,
+        <td>Prof. V.Krishna Murthy, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+          Prof. J.Pradeep,Dept.of.EEE,SNIST, Hyderabad, Telangana<br>
+          Prof. P.Vnkatesh, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+          Prof. K.Prasanya, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+          Prof. K.Ravi, Dept.of EEE, SNIST, Hyderabad, Telangana<br></td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td><strong>FINANCE CHAIR</strong></td>
+          <td>Prof. Ch.V.Seshagiri Rao, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+            Prof. K.V.V.P Chari, Dept. Of EEE, SNIST, Hyderabad, Telangana<br></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td><strong>COORDINATORS</strong></td>
+            <td>Prof. S.Ramu, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+              Prof. T.Praveen Kumar, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+              Prof. T.Abhiram, Dept.of EEE, SNIST, Hyderabad, Telangana<br></td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td><strong>CO-COORDINATORS</strong></td>
+              <td>Prof. B.Pavan Kumar, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                Prof. P.Satyanaryan, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                Prof. M.Ravikantha, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                Prof. M.Ranjit Kumar, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                Prof. G.Sujeetha Jadav, Dept.of EEE, SNIST, Hyderabad, Telangana<br></td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td><strong>ORGANIZING MEMBERS </strong></td>
+                <td>Prof. K.Sreelaxmi, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                  Prof. L.Ramadevi, Dept.of EEE, SNIST, Hyderabad, Telangana<br>
+                  Prof. G.Sravanti, Dept.of EEE, SNIST, Hyderabad, Telangana<br></td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td><strong>TECHNICAL COMMITEE MEMBERS</strong></td>
+                  <td style="text-align: justify;">Sukumar Mishra, IIT, Delhi, India<br>
+                    Bidyadhar Subudhi, IIT,Goa, India<br>
+                    C.K.Chanda,IIEST,Shibpur. India<br>
+                    Gayadhar Panda, NIT ,Meghalya, India<br>
+                    Srinibas sethi, IGIT,Saranga, India<br>
+                    P.V.N.Prasad, OSMANIA University, Telengana, India<br>
+                    B.Mangu, OSMANIA University, Telangana, India<br>
+                    R.Hemalata, OSMANIA University, Telangana, India<br>
+                    K.Bhaskar, JNTUH, Hyderabad, India<br>
+                    Chandragiri Radhacharan, JNTUH, Telangana, India<br>
+                    A.Kavitha, JNTUH, Telangana, India<br>
+                    O B V Ramanaiah, JNTU Hyderabad, India<br>
+                    S. Nagender Kumar, University of Hyderabad, Telangana, India<br>
+                    Nekuri Naveen, University of Hyderabad, Telangana, India<br>
+                    Rajendra Lal, University of Hyderabad, Telangana, India<br>
+                    Ch. Venkiakh, University of Hyderabad, Telangana, India<br>
+                    Vineet P Nair,,University of Hyderabad, Telangana, India<br>
+                    Bhaskar Sarkar, IIT, Hyderabad, Telangana, India<br>
+                    Kousik Nayak,IIT,Hyderabad, Telangana, India<br>
+                    M. Udaya Bhaskar, NIT, Warngal, Telangana, India<br>
+                    G.Shiv Kumar, NIT, Warngal, Telangana, India<br>
+                    Rashmi Ranjan Rout, Warngal, Telangana, India<br>
+                    Manjubala Bisi, NIT, Warngal, Telangana, India<br>
+                    Kagita Venkat, NIT, Warangal, Telangana, India<br>
+                    Pravat Kumar Ray, NIT, Rourkela, Odisha, India<br>
+                    Subrata Karmakar, NIT,Rourkela, Odisha, India<br>
+                    Arnab Ghosh, NIT, Rourkela, Odisha, India<br>
+                    Debasis Jena, NIT, Suratakala, Bangalore,India<br>
+                    V.B.Borghate, VNIT,Nagapur, ,India<br>
+                    Irfan Ahmed, NIT,Durgapur, ,India<br>
+                    Abhijit Sharma, NIT,Durgapur, ,India<br>
+                    Mousmi Saha, NIT, Durgapur, ,India<br>
+                    Mayukh Sarkar, MNNIT, Allahabad, ,India<br>
+                    Tapan Kumar Gandhi, IIT, Delhi, ,India<br>
+                    .D.Manjunatham, IIT,Mumbai, ,India<br>
+                    Pavan Kumar Mishra, NIT,Raipur, ,India<br>
+                    Annapa B, NIT,Suratakala, ,India<br>
+                    Somanath Tripathy, IIT,Patna, ,India<br>
+                    Moumita Patra, IIT, Guahati, ,India<br>
+                    Prof.D.P.Mohapatra, NIT, Rourkela, ,India<br>
+                    Prof.B.D.Sahoo, NIT, Rourkela, ,India<br>
+                    Sumanta pyne, NIT Rourkela, ,India<br>
+                    Soumaya Ranjan Mohanty, IIT (BHU), Uttar Pradesh, ,India<br>
+                    Swami Naidu, IIT (BHU), Uttar Pradesh, ,India<br>
+                    Arun Verma, NIT, Jaypur, India<br>
+                    Dushmanta Kumar Das, NIT, Nagaland, ,India<br>
+                    Gayadhar Pradhan, NIT,Patna, ,India<br>
+                    B. Chitti Babu, IIIT, Kanchipuram, ,India<br>
+                    Priyabrata Garanayak, IIIT, UNO,Himachal Pradesh, ,India<br>
+                    Subrat kumar Mohanty, IIIT, Bhubaneswar, ,India<br>
+                    Ramesh Chandra Mishra, IIIT Manipur, ,India<br>
+                    Partha Koyal, NIT,Silichar, Assam, India, ,India<br>
+                    D. Koteswara Raju, NIT,Silichar, Assam, India<br>
+                    P.M.Mesharam, Professor, YCCE, Nagapur, ,India<br>
+                    N.Kiran Kumar, Vardhaman College of Engineering<br>
+                    Dolagobinda Pradhan, GRIET, Hyderabad, ,India<br>
+                    Bidyadhar Rout, VSSUT, Burla, ,India<br>
+                    Rajkishore Swain, BPUT, Odisha, ,India<br>
+                    Bhagbat Panda, BPUT, Odisha, ,India<br>
+                    Prakash Kumar Ray, BPUT,Odisha, ,India<br>
+                    Asini Kumar Baliar Singh, BPUT,Odisha, ,India<br>
+                    Sujit Kumar Bhyan, B.P.U,T, Odisha, ,India<br>
+                    S. Venkateshwarlu, CVRCE,Hyderabad, ,India<br>
+                    Puja Dash, GVPCE, Vishakhapatnam, ,India<br>
+                    Birendra Biswal, GVPCE, Vishakhapatnam, ,India<br>
+                    Santhanu Dash, VNRVJIET, Hydreabad, ,India<br>
+                    Satyabrata Sahoo, NMRCET,Hyderabad, India<br>
+                    Satyajit Mohanty, VIT, Vellor, India<br>
+                    B K Tripathy, VIT, Vellor, India<br>
+                    Sushree dipti Swain, OPJU,Raipur, India<br>
+                    G. Suvarna Kumar, MVGRCE, Vijayanagaram, India<br>
+                    G. Sandhya MVGRCE, Vijayanagaram, India<br>
+                    Maheswar Behera, IGIT,Saranga, India<br>
+                    Sushant Kumar Sethy, B.P.U.T.Odisha, India<br>
+                    Manas Nayak. B.P.U.T, Odisha, India<br>
+                    Tarakanta Jena, SOA,University, Odisha, India<br>
+                    A.V.Pavan Kumar, MIT, Madanapalle, India<br>
+                    Aurobindo Bag, MIT, Madanapalle, India<br>
+                    Prasanta Patra, KIIT,University, Odisha, India<br>
+                    Prof. Nimai Charan Patel, B.P.U.T,Odisha, India<br>
+                    Khusbu Pahwa, Delhi Technological Uniersity, New Delhi, India<br>
+                    Satyajit Acharya, Tech Mahindra,Hyderabad, India<br>
+                    Alivelu Manga Parimi, BITS, Pilani, Hyderabad, India<br>
+                    Chitta Ranjan Hota, BITS,Pilani, Hyderabad, India<br>
+                    Subhrakanta Panda, BITs Pilani, Hyderabad, India<br>
+                    Punyaban Patel, CMR Technical Campus, Hyderabad, India<br>
+                    K. Srujan Raju, CMR Technical Campus, Hyderabad, India<br>
+                    Padmalaya Nayak, GR Institute of Engineering and Technology, Hyderabad, India<br>
+                    Subash Yadav, Central University of Jharkhand,Ranchi, India<br>
+                    Sumagna Patnai,JBIET,,Hyderabad, India<br>
+                    Sarat Chandra Nayak, CMR College of Engineering and Technology, Hyderabad, India<br>
+                    Chee Shen Lim, University of Southampton Malaysia, India<br>
+                    Kamon Thinsurat , Walailak University, Nakhon Si Thammarat, Thailand<br>
+                    I Nyoman Wahyu Satiawan, University of Mataram, Indonesia<br>
+                    Amit Kumar Mishra, University of Capetown, South Africa<br>
+                    Bagga, Ball State University, USA<br>
+                    Rajkumar Buyya, University of Melbourne, Australia<br>
+                    Md. Atiqur Rahman Ahad, University of Dhaka, Japan<br>
+                    Soodkhet Pojprapai, Suranaree University of Technology, Thailand<br>
+                    Yu-Dong Zhang, University of Leicester, United Kingdom<br>
+                    Soumen Roy, DRDL, Hyderabad<br>
+                    Deepak Kumar, NIT Meghalaya<br>
+                    Bunil Balabantaray, NIT, Meghalaya<br>
+                    Sandeep kumar panda, ICFAI,Hyderabad<br>
+                    Chandram Karri, CMD,CSA, Telangana, India<br>
+                    T. Vishnu Charan, DM, Tata Project, Telangana, India<br>
+                    Rajesh Verma, Infosys Ltd, Hyderabad, Telangana, India<br>
+                    Atluri Rahul, Neurolus Systems, Hyderabad, Telangana, India<br>
+                    P.Ravi Babu,SNIST,Hyderabad , Telangana, India<br>
+                    Varanshi Aruna, SNIST,Hyderabad, Telangana, India<br>
+                    S.Ravi Chandran, SNIST,Hyderabad, Telangana, India<br>
+                    K.Anup Kumar, SNIST,Hyderabad, Telangana, India<br>
+                    Raghavendra Reddy,SNIST,Hyderabad, Telangana, India<br>
+                    Kakarla sirisa, SNIST,Hyderabad, Telangana, India<br>
+                    G.Ramesh, SNIST,Hyderabad, Telangana, India<br>
+                    Prasanta Kumar Sahoo, SNIST,Hyderabad, Telangana, India<br>
+                    T.V.Rajanikanth, SNIST,Hyderabad, Telangana, India<br>
+                    K.Kannan, SNIST,Hyderabad, Telangana, India<br>
+                    V.Ranjith Babu, SNIST,Hyderabad, Telangana, India<br>
+                    PVS,Srinibasm SNIST,Hyderabad, Telangana, India<br>
+                    Ch.Niranjan Kumar, SNIST,Hyderabad, Telangana, India<br>
+                    T.Vijaya Saradhi, SNIST,Hyderabad Telangana, India<br>
+                    Krishna Dora, SNIST,Hyderabad, Telangana, India<br>
+                    Thota Venkata Naryan Rao, SNIST,Hyderabad, Telangana, India<br>
+                    H.Balaji, SNIST,Hyderabad, Telangana, India<br>
+                    Lohit Kapoor, SNIST,Hyderabad, Telangana, India<br>
+                    Kanchapuram Vassav Raju, SNIST,Hyderabad, Telangana, India<br>
+                    M.T.L. Gayatri, SNIST,Hyderabad, Telangana, India<br>
+                    Adindla Suma, SNIST,Hyderabad, Telangana, India<br>
+                    Laxmi Priya, SNIST,Hyderabad, Telangana, India<br>
+                    P.Sharath Kumar, SNIST,Hyderabad, Telangana, India<br>
+                    Kalathiripi Hussain, SNIST,Hyderabad, Telangana, India<br>
+                    Kompella Krishna Chaitanya Deekshit, Telangana, India<br>
+                    Ch.V.Seshegiri, SNIST,Hyderabad, Telangana, India<br>
+                    K.V.V.P.Chari, SNIST,Hyderabad, Telangana, India<br>
+                    V.Krishna Murthy, SNIST,Hyderabad, Telangana, India<br>
+                    B.Pavan Kumar, SNIST,Hyderabad, Telangana, India<br>
+                    P.Satyanaryan, SNIST,Hyderabad, Telangana, India<br>
+                    M.Ravikanth, SNIST,Hyderabad, Telangana, India<br>
+                    N.Ranjithakumar, SNIST,Hyderabad, Telangana, India<br>
+                    PVK Sandeep, SNIST,Hyderabad, Telangana, India<br>
+                    K.Sree Laxmi, SNIST,Hyderabad, Telangana, India<br>
+                    J.Pradeepm SNIST,Hyderabad, Telangana, India<br>
+                    K.Ravi, SNIST,Hyderabad, Telangana, India<br>
+                    L.Ramadevi, SNIST,Hyderabad, Telangana, India<br>
+                    G.Sravanthi, SNIST,Hyderabad, Telangana, India<br>
+                    K.Prasanya. SNIST,Hyderabad, Telangana, India<br>
+                    Potnuri Venkatsh, SNIST,Hyderabad, Telangana, India<br>
+                  </td>
+                </tr>
 
-          Mr. M. Ravikanth,
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <footer id="Contact" class="container-fluid footerDetail">
+         <div class="row">
+           <div class="col-lg-4 py-5  text-center" style="lighting-color: currentColor;">
+            <h4>Contact Us</h4>
+            <div class="row d-flex justify-content-center p-3">
+             <a href="www.sreenidhi.edu.in" class="btn zicon"><i class="fa fa-2x fa-envelope" style="color: white" aria-hidden="true"></i></a>
+             <a href="https://www.instagram.com/explore/tags/snist/?hl=en" class="btn zicon"><i class="fa fa-2x fa-instagram" style="color: white" aria-hidden="true"></i></a>
+             <a href="https://www.facebook.com/snistanimation/" class="btn zicon"><i class="fa fa-2x fa-facebook" style="color: white" aria-hidden="true"></i></a>
 
-        Mr. N. Ranjith Kumar</td>
-      </tr>
-      <tr>
-        <th scope="row">14</th>
-        <td><strong>TECHNICAL COMMITEE MEMBERS</strong></td>
-        <td style="text-align: justify;">Sukumar Mishara, IIT,Delhi
-          Siba Kumar Udgata, University of Hyderabad
-          Gayadhar Panda, NIT ,Meghalya
-          Srinibas sethi, IGIT,Saranga
-          G.Yesuratnam, Dept.of Electrical Engineering, OSMANIA University, Hyderabad
-          K.Bhaskara, JNTU,Hyderabad
-          O B V Ramanaiah,OBV, JNTU Hyderabad
-          Bhaskar Sarkar, IIT, Hyderabad
-          Kousik Nayak,IIT,Hyderabad
-          Amalendu Pattnaik, IIT,Rourkee
-          Ashok Pradhan, IIT,Khargapur
-          Somanath Tripathy, IIT Patna
-          Gaydhar Pradhan,NIT Patna
-          V.Sandeep, NIT, Andhrapradesh
-          G.Shiv Kumar,NIT Warngal
-          Rashmi Ranjan Rout,NIT,Warngal
-          Manjubala Bisi,NIT,Warngal
-          Bidyadhar Subudhi, IIT,Goa
-          C.K.Chanda, Professor ,Dept.of Electrical Engineering, IIEST,Shibpur
-          Somanath Majhi, IIT,Guahati
-          Moumita Patra IIT, Guahati
-          Soumya R Mohanty Department of Electrical Engineering , Indian Institute of Technology
-          (BHU), Varanasi, Uttar Pradesh, India
-          Amit Kumar Mishra University of Capetown South Africa
-          Pravat Kumar Ray, NIT, Rourkela
+             <a href="https://in.linkedin.com/school/sreenidhi-snist/" class="btn zicon"><i class="fa fa-2x fa-linkedin" style="color: white" aria-hidden="true"></i></a>
+             <a href="https://twitter.com/Sreenidhi_SNIST" class="btn zicon"><i class="fa fa-2x fa-twitter" style="color: white" aria-hidden="true"></i></a>
 
-          Chee Shen Lim, Department of Electrical and Electronic Engineering, University of
-          Southampton Malaysia,
-          Kamon Thinsurat , School of Engineering and Technology, Walailak University, Nakhon Si
-          Thammarat, Thailand
-          Swami Naidu , Department of Electrical Engineering , Indian Institute of Technology (BHU),
-          Varanasi, Uttar Pradesh, India
-          P. Sanjeevikumar ,
-          Prof. Avik Bhattacharya , Department of Electrical Engineering Indian Institute of Technology
-          Roorkee
-          R Hemalatha University College of Engineering, Osmania University
-          Arnab Ghosh, NIT,Rurkela
-          Arun Kumar Verma, Malaviya National Institute of Technology Jaipur, Rajasthan, India
-          Soumya Shubhra Nag , IIT,Delhi
-          A. K. Turuk, NIT Rourkela
-          B. D. Sahoo, NIT Rourkela
-          D. P. Mohapatra, NIT Rourkela
-          P. M. Khilar, NIT Rourkela
-          Chitta Ranja Hota, BITS Pilani,Hyderabad,
-          Sumanth Yenduri, Kennesaw University, USA
-          Shaik Shakeel Ahamad, Majmaah University, Saudi Arabia
-          apan Kumar Gandhi,Dept of Electrical Engineering, IIT, Delhi
-          Nekuri Naveen, School of Computer and Information Sciences,University of Hyderabad
-          Ch. Venkaiah,School of Computer and Information Sciences,University of Hyderabad
-          Rajendra Lal,School of Computer and Information Sciences,University of Hyderabad
-          Annappa B., NIT Surathkal
-          Partha Koyal, NIT,Silichar
-          Puja ash,
-          Priyabrat Garanayak, IIIT,UNO,Himachal Pradesh
-          B.Chitti Babu, Professor, IIITM, Kanchi purum
-        Alivelu Manga Parimi, BITS Pilani,Hyderabad</td>
-      </tr>
+           </div>
+           <div class="row d-flex justify-content-center p-3">
+            <p>For any Queries,<br>Contact:
+             Dr. Pratap Sekhar Puhan<br>
+             Organizing Secretary
+             ICICCSP 2021<br>
+             pratapsekhar@sreenidhi.edu.in<br>
+             iciccsp@gmail.com<br>
+             Mobile:9437615586<p>
+             </div>
+           </div>
+           <div class="col-lg-4 p-5 ">
+            <div class="d-flex flex-column">
+             <div class="d-flex justify-content-center">
+               <img src="snist.jpg" class="img img-thumbnail" style="width: 150px;height: 100px">
+             </div><br><br>
+             <div class="d-flex justify-content-center p-1">
+              <p class="text-center">Designed and Developed by<br>
+                A Vamsi Mudaliar<br>
+                Dept. of EEE, SNIST, Gathkesar<br>
 
-    </tbody>
-  </table>
-</div>
-</div>
-<footer id="Contact" class="container-fluid footerDetail">
-	<div class="row">
-   <div class="col-lg-4 py-5  text-center" style="lighting-color: currentColor;">
-    <h4>Contact Us</h4>
-    <div class="row d-flex justify-content-center p-3">
-     <a href="www.sreenidhi.edu.in" class="btn zicon"><i class="fa fa-2x fa-envelope" style="color: white" aria-hidden="true"></i></a>
-     <a href="https://www.instagram.com/explore/tags/snist/?hl=en" class="btn zicon"><i class="fa fa-2x fa-instagram" style="color: white" aria-hidden="true"></i></a>
-     <a href="https://www.facebook.com/snistanimation/" class="btn zicon"><i class="fa fa-2x fa-facebook" style="color: white" aria-hidden="true"></i></a>
+                Copyright © Dept. of EEE, SNIST, Gathkesar 2020<br></p>
+              </div>
+            </div>
 
-     <a href="https://in.linkedin.com/school/sreenidhi-snist/" class="btn zicon"><i class="fa fa-2x fa-linkedin" style="color: white" aria-hidden="true"></i></a>
-     <a href="https://twitter.com/Sreenidhi_SNIST" class="btn zicon"><i class="fa fa-2x fa-twitter" style="color: white" aria-hidden="true"></i></a>
+
+          </div>
+          <div class="col-lg-4 p-5 ">
+            <h4 class="text-center">Subscribe to Our NewLetter</h4><br><br>
+            <div class="d-flex flex-row">
+              <div class="d-flex justify-content-center ml-4 p-2">
+               <input type="email" name="email" class="form-control" placeholder="Enter email">	
+             </div>
+             <div class="p-2">
+               <a href="#" class="btn btn-md btn-primary">Subscribe</a>
+             </div>
+
+           </div> 
+         </div>
+
+
+       </div>
+     </div>
    </div>
  </div>
- <div class="col-lg-4 p-5 ">
-  <div class="d-flex flex-column">
-   <div class="d-flex justify-content-center">
-     <img src="snist.jpg" class="img img-thumbnail" style="width: 150px;height: 100px">
-   </div><br><br>
-   <div class="d-flex justify-content-center p-1">
-    <p class="text-center">Designed and Developed by<br>
-      A Vamsi Mudaliar<br>
-      Dept. of EEE, SNIST, Gathkesar<br>
-
-      Copyright © Dept. of EEE, SNIST, Gathkesar 2020<br></p>
-    </div>
-  </div>
-
-
-</div>
-<div class="col-lg-4 p-5 ">
-  <h4 class="text-center">Subscribe to Our NewLetter</h4><br><br>
-  <div class="d-flex flex-row">
-    <div class="d-flex justify-content-center ml-4 p-2">
-     <input type="email" name="email" class="form-control" placeholder="Enter email">	
-   </div>
-   <div class="p-2">
-     <a href="#" class="btn btn-md btn-primary">Subscribe</a>
-   </div>
-
- </div> 
-</div>
-
-
-</div>
-</div>
-</div>
-</div>
 </footer>
 
 
